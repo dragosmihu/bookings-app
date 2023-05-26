@@ -2,7 +2,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return <footer>
-        <div>
+        <div id="contactDiv">
             <h3>Contact</h3>
             <p>Adresa: xxxxxxxxx</p>
             <p>Telefon: xxxxxxxxx</p>

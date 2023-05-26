@@ -10,6 +10,7 @@ import Actors from "./Components/Actors";
 import Footer from './Components/Footer';
 function App() {
   return (
+    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -20,9 +21,9 @@ function App() {
             <Route path="map" element={<Map />} />
           </Route>
         </Routes>
-        <Footer />
     </BrowserRouter>
-    
+    <Footer />
+    </div>
 
   );
 }
