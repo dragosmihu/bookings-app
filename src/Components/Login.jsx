@@ -10,6 +10,7 @@ import {
 import accountService from "../Service/Account";
 import { useAuth } from "../Context/AuthContext";
 import '../Styles/Login.css';
+import React from "react";
 
 const Login = () => {
     const { logIn } = useAuth();

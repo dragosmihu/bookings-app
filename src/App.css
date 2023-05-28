@@ -147,14 +147,3 @@ footer {
   padding: 5px;
   margin-right: 20px;
 }
-
-#accountNavDiv{
-  top:8px;
-  position: absolute;
-  right:3%;
-}
-#accountNavDiv > div > *{
-  margin: 10%;
-  padding: 0;
-  text-decoration: none;
-}
