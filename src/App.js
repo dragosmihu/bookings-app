@@ -8,6 +8,8 @@ import Plays from "./Components/Plays";
 import Map from "./Components/Map";
 import Actors from "./Components/Actors";
 import Footer from './Components/Footer';
+import React from 'react';
+import ShowDetails from './Components/ShowDetails';
 function App() {
   return (
     <div>
@@ -19,6 +21,7 @@ function App() {
             <Route path="plays" element={<Plays />} />
             <Route path="actors" element={<Actors />} />
             <Route path="map" element={<Map />} />
+            <Route path="/show/:showId" element={<ShowDetails />} />
           </Route>
         </Routes>
     </BrowserRouter>

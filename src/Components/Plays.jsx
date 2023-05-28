@@ -1,5 +1,9 @@
+import React from "react";
+import ShowList from "./Shows";
 const Plays = () => {
-    return <h1>Plays</h1>;
+    return (<div>
+      <ShowList />
+    </div>);
   };
   
   export default Plays;
