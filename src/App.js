@@ -1,4 +1,3 @@
-
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout";
@@ -8,22 +7,30 @@ import Plays from "./Components/Plays";
 import Map from "./Components/Map";
 import Actors from "./Components/Actors";
 import Footer from './Components/Footer';
+import Register from './Components/Register';
+import Login from './Components/Login';
+import { AuthProvider } from "./Context/AuthContext";
+import React from 'react';
+import ShowDetails from './Components/ShowDetails';
 function App() {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="plays" element={<Plays />} />
-            <Route path="actors" element={<Actors />} />
-            <Route path="map" element={<Map />} />
+    <AuthProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="plays" element={<Plays />} />
+              <Route path="actors" element={<Actors />} />
+              <Route path="map" element={<Map />} />
+              <Route path="register" element={<Register />} />
+              <Route path="login" element={<Login />} />
+              <Route path="/show/:showId" element={<ShowDetails />} />
           </Route>
-        </Routes>
-    </BrowserRouter>
-    <Footer />
-    </div>
+          </Routes>
+        </BrowserRouter>
+      <Footer />
+    </AuthProvider>
 
   );
 }

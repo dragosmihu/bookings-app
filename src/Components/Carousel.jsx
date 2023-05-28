@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ReactSimplyCarousel from 'react-simply-carousel';
+import React from 'react';
 
 function ReactSimplyCarouselExample() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
