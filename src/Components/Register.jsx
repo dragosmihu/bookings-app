@@ -9,7 +9,6 @@ import {
   Button
 } from "react-bootstrap";
 import accountService from "../Service/Account";
-import '../Styles/Register.css';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -89,27 +88,27 @@ const Register = () => {
 
   if (hasRegistered) {
     return (
-      <Container className="d-flex align-items-center justify-content-center">
-        <div
-          className="w-100"
-          style={{ maxWidth: "400px", position: "absolute" }}
-        >
-          <Card>
-            <Card.Body className="cardBody">
-              <div>
-                <h2 className="text-center mb-4">Înregistrarea a fost efectuată</h2>
-              </div>
-              <Button className="w-100 mt-4" href="/">
-                Home
-              </Button>
-            </Card.Body>
-          </Card>
+        <div id="container" style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+            <div
+            className="w-100"
+            style={{ maxWidth: "400px", position: "absolute" }}
+            >
+            <Card>
+                <Card.Body className="cardBody">
+                <div>
+                    <h2 className="text-center mb-4">Înregistrarea a fost efectuată</h2>
+                </div>
+                <Button className="w-100 mt-4" href="/">
+                    Home
+                </Button>
+                </Card.Body>
+            </Card>
+            </div>
         </div>
-      </Container>
     );
   }
     return (
-    <Container className="d-flex align-items-center justify-content-center">
+    <div id="container" style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
       <div
         className="w-100"
         style={{ maxWidth: "400px",  position: "absolute" }}
@@ -197,7 +196,7 @@ const Register = () => {
       </Card.Body>
     </Card>
   </div>
-</Container>
+</div>
   )};
 
   export default Register;
