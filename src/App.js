@@ -15,7 +15,7 @@ import ShowDetails from './Components/ShowDetails';
 function App() {
   return (
     <AuthProvider>
-        <BrowserRouter>
+        <BrowserRouter id="content">
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />

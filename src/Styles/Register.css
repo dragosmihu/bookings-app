@@ -1,10 +1,10 @@
-.container {
+#container {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
+  width: 10vw;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;

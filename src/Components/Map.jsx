@@ -1,11 +1,10 @@
 import React from "react";
 const Map = () => {
     return (
-      <div style={{
+      <div className="main" style={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        height: "100%"
+        justifyContent: "center"
       }}>
         <img src ="../Imag/parter.jpeg" alt = 'Eatj1' />
         <h2>Parter</h2>

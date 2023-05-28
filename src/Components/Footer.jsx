@@ -4,10 +4,8 @@ const Footer = () => {
 
   return <footer>
         <div id="contactDiv">
-            <h3>Contact</h3>
-            <p>Adresa: xxxxxxxxx</p>
-            <p>Telefon: xxxxxxxxx</p>
-            <p>Email: xxxxxxxxx</p>
+            <p>Adresa: str. X, nr. Y, Bucuresti, Romania</p>
+            <p>Telefon: 0762312542</p>
         </div>
         {`Copyright © Theatre ${year}`}
     </footer>;

@@ -28,7 +28,7 @@ const Layout = () => {
           <li>
             <div id="accountNavDiv">{isLoggedIn ? 
               <div>
-                <p>{fullName}</p>
+                <p style={{margin: 0}}>{fullName}</p>
                 <Link to="/" onClick={handleLogOut}>Logout</Link>
               </div>
               : 

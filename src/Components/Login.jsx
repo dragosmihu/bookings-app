@@ -71,7 +71,7 @@ const Login = () => {
   }
 
   return (
-    <Container className="d-flex align-items-center justify-content-center">
+    <div id="container" style={{ maxWidth: 1200, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
       <div
         className="w-100"
         style={{ maxWidth: "400px",  position: "absolute" }}
@@ -119,7 +119,7 @@ const Login = () => {
             </Card.Body>
           </Card>
         </div>
-      </Container>
+      </div>
   )};
   
   export default Login;
