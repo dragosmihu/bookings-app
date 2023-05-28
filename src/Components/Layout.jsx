@@ -1,7 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
 import React from "react";
-
+import {useAuth} from '../Context/AuthContext'
 const Layout = () => {
+  const { isLoggedIn,fullName, logOut } = useAuth();
+  const handleLogOut = () => {
+    logOut();
+  };
   return (
     <>
       <nav>
@@ -20,6 +24,20 @@ const Layout = () => {
           </li>
           <li>
             <Link to="/map">Harta</Link>
+          </li>
+          <li>
+            <div id="accountNavDiv">{isLoggedIn ? 
+              <div>
+                <p>{fullName}</p>
+                <Link to="/" onClick={handleLogOut}>Logout</Link>
+              </div>
+              : 
+              <div>
+                <Link to="/register">Înregistrare</Link>
+                <Link to="/login">Autentificare</Link>
+              </div>
+            }
+            </div>
           </li>
         </ul>
       </nav>
