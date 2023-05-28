@@ -28,7 +28,6 @@ function ReactSimplyCarouselExample() {
           children: <span>{`>`}</span>,
         }}
         backwardBtnProps={{
-          //here you can also pass className, or any other button element attributes
           style: {
             alignSelf: 'center',
             background: 'black',
@@ -54,35 +53,20 @@ function ReactSimplyCarouselExample() {
         speed={400}
         easing="linear"
       >
-        <div style={{ width: 300, height: 300}}> 
+        <div style={{ width: 400, height: 553}}> 
         <img src ="../Imag/rudepierdute.png" alt = 'Luni, 29.05.2023 ora 18:30' />
         </div>
-        <div style={{ width: 300, height: 300}}>
+        <div style={{ width: 400, height: 562}}>
         <img src ="../Imag/iubire.png" alt = 'Luni, 29.05.2023 ora 12:30' />
         </div>
-        <div style={{ width: 300, height: 300}}>
+        <div style={{ width: 400, height: 533}}>
         <img src ="../Imag/amanta.png" alt = 'Luni, 29.05.2023 ora 16:30' />
         </div>
-        <div style={{ width: 300, height: 300}}>
-          slide 3
+        <div style={{ width: 400, height: 553}}>
+        <img src ="../Imag/dragoste.png" alt = 'Luni, 29.05.2023 ora 20:00' />
         </div>
-        <div style={{ width: 300, height: 300}}>
-          slide 4
-        </div>
-        <div style={{ width: 300, height: 300}}>
-          slide 5
-        </div>
-        <div style={{ width: 300, height: 300 }}>
-          slide 6
-        </div>
-        <div style={{ width: 300, height: 300}}>
-          slide 7
-        </div>
-        <div style={{ width: 300, height: 300}}>
-          slide 8
-        </div>
-        <div style={{ width: 300, height: 300}}>
-          slide 9
+        <div style={{ width: 400, height: 571}}>
+        <img src ="../Imag/jaful.png" alt = 'Luni, 29.05.2023 ora 19:30' />
         </div>
       </ReactSimplyCarousel>
     </div>
